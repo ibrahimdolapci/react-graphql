@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ibrahimdolapci.github.io/react-graphql",
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
     "@apollo/client": "^3.2.7",
@@ -27,6 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
