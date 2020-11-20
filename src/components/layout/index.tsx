@@ -29,17 +29,17 @@ const CenteredFooter = styled(Footer)`
 
 export function AppLayout() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <FullHeightLayout>
                 <Header/>
                 <PaddedContent>
                     <Background>
                         <Switch>
-                            <Route path="/:continent">
+                            <Route path="/continent/:continent">
                                 <Countries/>
                             </Route>
                             <Route path="/">
-                                <Redirect to="/AF" />
+                                <Redirect to="/continent/AF"/>
                             </Route>
                         </Switch>
                     </Background>

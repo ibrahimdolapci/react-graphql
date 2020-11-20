@@ -17,7 +17,7 @@ export function Header() {
                 {
                     continents.map(continent => (
                         <Menu.Item key={continent.code}>
-                            <Link to={continent.code}>
+                            <Link to={'/continent/' + continent.code}>
                                 {continent.name}
                             </Link>
                         </Menu.Item>
